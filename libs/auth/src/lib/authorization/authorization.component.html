@@ -1,0 +1,11 @@
+<button *ngIf="authenticated$ | async; else logOutButton" (click)="logout()">
+  Log out
+</button>
+
+<ng-template #logOutButton>
+  <button (click)="login()">
+    Log in
+  </button>
+</ng-template>
+
+
