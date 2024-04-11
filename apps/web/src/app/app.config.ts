@@ -13,7 +13,7 @@ export const appConfig: ApplicationConfig = {
     provideAuthorization(),
     {
       provide: BACKEND_URL,
-      useValue: environment.backendApiUrl
+      useFactory: () => environment.backendApiUrl
     }
   ]
 };

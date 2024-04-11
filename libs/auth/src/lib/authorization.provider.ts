@@ -1,8 +1,9 @@
 import { EnvironmentProviders } from '@angular/core';
-import { LogLevel, OpenIdConfiguration, provideAuth, StsConfigHttpLoader, StsConfigLoader } from 'angular-auth-oidc-client';
+import { LogLevel, OpenIdConfiguration, provideAuth, StsConfigLoader, StsConfigHttpLoader } from 'angular-auth-oidc-client';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
 import { AuthConfiguration } from './auth.configuration';
+import { BackendUrlProvider } from '@fb/core';
 
 const defaultConfiguration: OpenIdConfiguration = {
     authority: '',
@@ -17,8 +18,8 @@ const defaultConfiguration: OpenIdConfiguration = {
     useRefreshToken: true
 };
 
-const identityServerConfigurationLoaderFactory = (httpClient: HttpClient, BACKEND_URL: string) => {
-  const url = `${BACKEND_URL}/api/configuration`;
+const identityServerConfigurationLoaderFactory = (httpClient: HttpClient, backendUrlProvider: BackendUrlProvider) => {
+  const url = `${backendUrlProvider.url}/api/configuration`;
   const config$ = httpClient.get<AuthConfiguration>(url).pipe(
     map((customConfig: AuthConfiguration) => {
       return ({
@@ -38,7 +39,8 @@ export function provideAuthorization(): EnvironmentProviders {
         provide: StsConfigLoader,
         useFactory: identityServerConfigurationLoaderFactory,
         deps: [
-          HttpClient
+          HttpClient,
+          BackendUrlProvider
         ]
       }
     });
