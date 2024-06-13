@@ -42,6 +42,7 @@
     "@types/node": "^18.16.9",
     "@typescript-eslint/eslint-plugin": "7.3.0",
     "@typescript-eslint/parser": "7.3.0",
+    "@typescript-eslint/utils": "^8.0.0-alpha.28",
     "cypress": "13.8.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "^9.0.0",
@@ -80,6 +81,106 @@
   ],
   "fileMap": {
     "projectFileMap": {
+      "core": [
+        {
+          "file": "libs/core/.eslintrc.json",
+          "hash": "13008194900485200782"
+        },
+        {
+          "file": "libs/core/README.md",
+          "hash": "17572240419243064277"
+        },
+        {
+          "file": "libs/core/jest.config.ts",
+          "hash": "13644711952509955617"
+        },
+        {
+          "file": "libs/core/project.json",
+          "hash": "1316804411355092763"
+        },
+        {
+          "file": "libs/core/src/index.ts",
+          "hash": "4050975495960509800"
+        },
+        {
+          "file": "libs/core/src/lib/backend-url.provider.ts",
+          "hash": "3665126328356985371"
+        },
+        {
+          "file": "libs/core/src/lib/components/layout/layout.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/core/src/lib/components/layout/layout.component.html",
+          "hash": "12913213833671945480"
+        },
+        {
+          "file": "libs/core/src/lib/components/layout/layout.component.spec.ts",
+          "hash": "12095496665342554658"
+        },
+        {
+          "file": "libs/core/src/lib/components/layout/layout.component.ts",
+          "hash": "8080924754128000153"
+        },
+        {
+          "file": "libs/core/src/lib/fb.constants.ts",
+          "hash": "13390587835670879242"
+        },
+        {
+          "file": "libs/core/src/test-setup.ts",
+          "hash": "10765977267162271731"
+        },
+        {
+          "file": "libs/core/tsconfig.json",
+          "hash": "7184861466157324158"
+        },
+        {
+          "file": "libs/core/tsconfig.lib.json",
+          "hash": "15304444604046903881"
+        },
+        {
+          "file": "libs/core/tsconfig.spec.json",
+          "hash": "1930986853382524452"
+        }
+      ],
+      "web-e2e": [
+        {
+          "file": "apps/web-e2e/.eslintrc.json",
+          "hash": "10799368048025705622"
+        },
+        {
+          "file": "apps/web-e2e/cypress.config.ts",
+          "hash": "5028071857415354136"
+        },
+        {
+          "file": "apps/web-e2e/project.json",
+          "hash": "13152013170963507412"
+        },
+        {
+          "file": "apps/web-e2e/src/e2e/app.cy.ts",
+          "hash": "1552232631404057509"
+        },
+        {
+          "file": "apps/web-e2e/src/fixtures/example.json",
+          "hash": "13882982864087580737"
+        },
+        {
+          "file": "apps/web-e2e/src/support/app.po.ts",
+          "hash": "5364106453863571025"
+        },
+        {
+          "file": "apps/web-e2e/src/support/commands.ts",
+          "hash": "7570864621153670540"
+        },
+        {
+          "file": "apps/web-e2e/src/support/e2e.ts",
+          "hash": "14369563060992369541"
+        },
+        {
+          "file": "apps/web-e2e/tsconfig.json",
+          "hash": "8511929940695645841"
+        }
+      ],
       "web": [
         {
           "file": "apps/web/.eslintrc.json",
@@ -177,44 +278,6 @@
           "hash": "8520226533480223808"
         }
       ],
-      "web-e2e": [
-        {
-          "file": "apps/web-e2e/.eslintrc.json",
-          "hash": "10799368048025705622"
-        },
-        {
-          "file": "apps/web-e2e/cypress.config.ts",
-          "hash": "5028071857415354136"
-        },
-        {
-          "file": "apps/web-e2e/project.json",
-          "hash": "13152013170963507412"
-        },
-        {
-          "file": "apps/web-e2e/src/e2e/app.cy.ts",
-          "hash": "1552232631404057509"
-        },
-        {
-          "file": "apps/web-e2e/src/fixtures/example.json",
-          "hash": "13882982864087580737"
-        },
-        {
-          "file": "apps/web-e2e/src/support/app.po.ts",
-          "hash": "5364106453863571025"
-        },
-        {
-          "file": "apps/web-e2e/src/support/commands.ts",
-          "hash": "7570864621153670540"
-        },
-        {
-          "file": "apps/web-e2e/src/support/e2e.ts",
-          "hash": "14369563060992369541"
-        },
-        {
-          "file": "apps/web-e2e/tsconfig.json",
-          "hash": "8511929940695645841"
-        }
-      ],
       "authorization": [
         {
           "file": "libs/auth/.eslintrc.json",
@@ -277,68 +340,6 @@
         },
         {
           "file": "libs/auth/tsconfig.spec.json",
-          "hash": "1930986853382524452"
-        }
-      ],
-      "core": [
-        {
-          "file": "libs/core/.eslintrc.json",
-          "hash": "13008194900485200782"
-        },
-        {
-          "file": "libs/core/README.md",
-          "hash": "17572240419243064277"
-        },
-        {
-          "file": "libs/core/jest.config.ts",
-          "hash": "13644711952509955617"
-        },
-        {
-          "file": "libs/core/project.json",
-          "hash": "1316804411355092763"
-        },
-        {
-          "file": "libs/core/src/index.ts",
-          "hash": "4050975495960509800"
-        },
-        {
-          "file": "libs/core/src/lib/backend-url.provider.ts",
-          "hash": "3665126328356985371"
-        },
-        {
-          "file": "libs/core/src/lib/components/layout/layout.component.css",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "libs/core/src/lib/components/layout/layout.component.html",
-          "hash": "12913213833671945480"
-        },
-        {
-          "file": "libs/core/src/lib/components/layout/layout.component.spec.ts",
-          "hash": "12095496665342554658"
-        },
-        {
-          "file": "libs/core/src/lib/components/layout/layout.component.ts",
-          "hash": "8080924754128000153"
-        },
-        {
-          "file": "libs/core/src/lib/fb.constants.ts",
-          "hash": "13390587835670879242"
-        },
-        {
-          "file": "libs/core/src/test-setup.ts",
-          "hash": "10765977267162271731"
-        },
-        {
-          "file": "libs/core/tsconfig.json",
-          "hash": "7184861466157324158"
-        },
-        {
-          "file": "libs/core/tsconfig.lib.json",
-          "hash": "15304444604046903881"
-        },
-        {
-          "file": "libs/core/tsconfig.spec.json",
           "hash": "1930986853382524452"
         }
       ]
