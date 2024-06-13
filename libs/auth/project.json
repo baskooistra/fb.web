@@ -2,7 +2,7 @@
   "name": "authorization",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/auth/src",
-  "prefix": "lib",
+  "prefix": "fb",
   "tags": [],
   "projectType": "library",
   "targets": {

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'lib-layout',
+  selector: 'fb-layout',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './layout.component.html',
