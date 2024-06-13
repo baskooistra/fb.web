@@ -24,7 +24,7 @@
     "@angular-eslint/eslint-plugin": "18.0.1",
     "@angular-eslint/eslint-plugin-template": "18.0.1",
     "@angular-eslint/template-parser": "18.0.1",
-    "@angular/cli": "~17.3.0",
+    "@angular/cli": "~18.0.0",
     "@angular/compiler-cli": "18.0.3",
     "@angular/language-service": "18.0.3",
     "@nx/cypress": "19.2.3",
@@ -80,71 +80,6 @@
   ],
   "fileMap": {
     "projectFileMap": {
-      "authorization": [
-        {
-          "file": "libs/auth/.eslintrc.json",
-          "hash": "13008194900485200782"
-        },
-        {
-          "file": "libs/auth/README.md",
-          "hash": "9217510733757000647"
-        },
-        {
-          "file": "libs/auth/jest.config.ts",
-          "hash": "9463433936248661869"
-        },
-        {
-          "file": "libs/auth/project.json",
-          "hash": "4668037569247169666"
-        },
-        {
-          "file": "libs/auth/src/index.ts",
-          "hash": "10336834786732934404"
-        },
-        {
-          "file": "libs/auth/src/lib/auth.configuration.ts",
-          "hash": "11221788379731018281"
-        },
-        {
-          "file": "libs/auth/src/lib/authorization.provider.ts",
-          "hash": "5012678969627409471",
-          "deps": [
-            "core"
-          ]
-        },
-        {
-          "file": "libs/auth/src/lib/authorization/authorization.component.css",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "libs/auth/src/lib/authorization/authorization.component.html",
-          "hash": "12751192859649198784"
-        },
-        {
-          "file": "libs/auth/src/lib/authorization/authorization.component.spec.ts",
-          "hash": "11357533621104961793"
-        },
-        {
-          "file": "libs/auth/src/lib/authorization/authorization.component.ts",
-          "hash": "15188568484653333555"
-        },
-        {
-          "file": "libs/auth/src/test-setup.ts",
-          "hash": "10765977267162271731"
-        },
-        {
-          "file": "libs/auth/tsconfig.json",
-          "hash": "7184861466157324158"
-        },
-        {
-          "file": "libs/auth/tsconfig.lib.json",
-          "hash": "15304444604046903881"
-        },
-        {
-          "file": "libs/auth/tsconfig.spec.json",
-          "hash": "1930986853382524452"
-        }
-      ],
       "web": [
         {
           "file": "apps/web/.eslintrc.json",
@@ -278,6 +213,71 @@
         {
           "file": "apps/web-e2e/tsconfig.json",
           "hash": "8511929940695645841"
+        }
+      ],
+      "authorization": [
+        {
+          "file": "libs/auth/.eslintrc.json",
+          "hash": "13008194900485200782"
+        },
+        {
+          "file": "libs/auth/README.md",
+          "hash": "9217510733757000647"
+        },
+        {
+          "file": "libs/auth/jest.config.ts",
+          "hash": "9463433936248661869"
+        },
+        {
+          "file": "libs/auth/project.json",
+          "hash": "4668037569247169666"
+        },
+        {
+          "file": "libs/auth/src/index.ts",
+          "hash": "10336834786732934404"
+        },
+        {
+          "file": "libs/auth/src/lib/auth.configuration.ts",
+          "hash": "11221788379731018281"
+        },
+        {
+          "file": "libs/auth/src/lib/authorization.provider.ts",
+          "hash": "5012678969627409471",
+          "deps": [
+            "core"
+          ]
+        },
+        {
+          "file": "libs/auth/src/lib/authorization/authorization.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/auth/src/lib/authorization/authorization.component.html",
+          "hash": "12751192859649198784"
+        },
+        {
+          "file": "libs/auth/src/lib/authorization/authorization.component.spec.ts",
+          "hash": "11357533621104961793"
+        },
+        {
+          "file": "libs/auth/src/lib/authorization/authorization.component.ts",
+          "hash": "15188568484653333555"
+        },
+        {
+          "file": "libs/auth/src/test-setup.ts",
+          "hash": "10765977267162271731"
+        },
+        {
+          "file": "libs/auth/tsconfig.json",
+          "hash": "7184861466157324158"
+        },
+        {
+          "file": "libs/auth/tsconfig.lib.json",
+          "hash": "15304444604046903881"
+        },
+        {
+          "file": "libs/auth/tsconfig.spec.json",
+          "hash": "1930986853382524452"
         }
       ],
       "core": [
