@@ -28,6 +28,7 @@
           "apps/web/src/assets"
         ],
         "styles": [
+          "apps/web/src/fb-theme.scss",
           "apps/web/src/styles.scss"
         ],
         "scripts": []

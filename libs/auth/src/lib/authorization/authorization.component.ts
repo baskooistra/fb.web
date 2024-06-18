@@ -2,11 +2,13 @@ import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
 import { LoginResponse, OidcSecurityService } from 'angular-auth-oidc-client';
+import {MatIcon} from "@angular/material/icon";
+import {MatIconButton} from "@angular/material/button";
 
 @Component({
   selector: 'fb-authorization',
   standalone: true,
-  imports: [ CommonModule ],
+  imports: [CommonModule, MatIcon, MatIconButton],
   providers: [ OidcSecurityService ],
   templateUrl: './authorization.component.html',
   styleUrl: './authorization.component.css',

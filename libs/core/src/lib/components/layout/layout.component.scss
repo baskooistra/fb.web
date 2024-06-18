@@ -1,0 +1,26 @@
+@use '@angular/material' as mat;
+@import 'apps/web/src/styles';
+
+mat-toolbar {
+  background: mat.get-theme-color($fb-theme, primary-container);
+  color: mat.get-theme-color($fb-theme, tertiary);
+}
+
+mat-sidenav-container {
+  height: 100%;
+}
+
+mat-sidenav {
+  border-color: mat.get-theme-color($fb-theme, tertiary);
+  border-radius: 0;
+  margin: 15px;
+  padding: 15px;
+}
+
+mat-sidenav-content {
+  padding: 15px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

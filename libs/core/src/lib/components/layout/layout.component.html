@@ -1,1 +1,18 @@
-<p>layout works!</p>
+<mat-toolbar>
+  <button mat-icon-button aria-label="Open or close menu" (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>
+    Fitbook
+  </span>
+  <span class="spacer"></span>
+  <fb-authorization></fb-authorization>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav opened position="start" mode="side" disableClose="true">
+    <a [routerLink]="'/home'">Home</a>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

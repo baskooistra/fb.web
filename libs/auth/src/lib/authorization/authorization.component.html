@@ -1,10 +1,10 @@
-<button *ngIf="authenticated$ | async; else logOutButton" (click)="logout()">
-  Log out
+<button mat-icon-button aria-label="Log out" *ngIf="authenticated$ | async; else logInButton" (click)="logout()">
+  <mat-icon>logout</mat-icon>
 </button>
 
-<ng-template #logOutButton>
-  <button (click)="login()">
-    Log in
+<ng-template #logInButton>
+  <button mat-icon-button aria-label="Log in" (click)="login()">
+    <mat-icon>person</mat-icon>
   </button>
 </ng-template>
 
